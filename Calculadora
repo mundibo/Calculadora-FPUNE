@@ -71,3 +71,26 @@ int main() {
 	}
 	printf("\nEn binario es:\t%.0f\n",w);
 	}
+if((menu==1)||(menu==3)){
+	if(menu==3){
+		n=s;
+	}
+	aux = n;
+	while (aux>=1) {
+		aux =(aux/8);
+		x = x+1;
+	}
+	aux = n;
+	i=0;
+	double vec[x];
+	for (i=1;i<=x;i+=1) {
+		vec[i] = aux%8;
+		aux =(aux/8);
+	}
+	i=0;
+	for (i=x;i>=1;i=i-1) {
+		z = vec[i]/10;
+		y = (z+y)*10;
+	}
+	printf("En octal es:\t%.0f\n",y);
+	}
